@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <style type="text/css" media="screen">
+            #target {
+                width: 60px;
+                height: 60px;
+                background: #33691E;
+            }
+        </style>
+        <div id="target">
+        </div>
+        <script>
+            var target = document.querySelector("#target");
+            target.onmouseover = function () {
+                // Thurc hiên doi sang màu #BF360C
+                target.style.backgroundColor = '#BF360C';
+            }
+            target.onmouseout = function () {
+                // Thurc hiên doi sang màu #33691E
+                target.style.backgroundColor = '#33691E';
+            }
+        </script>
+
+    </body>
+
+</html>
